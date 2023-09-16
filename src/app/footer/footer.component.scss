@@ -1,0 +1,17 @@
+footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.footer-column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 300px;
+  max-width: 350px;
+}

@@ -1,0 +1,47 @@
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navbar-menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left-col {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navbar-menu-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-menu-container li {
+  display: block;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.user-avatar-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.user-avatar-container img {
+  height: 34px;
+  border-radius: 200px;
+}
+
+.navbar-item-active {
+  border-bottom: 2px solid #2c3857;
+}
