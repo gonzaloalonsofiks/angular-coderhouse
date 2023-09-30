@@ -2,16 +2,32 @@ footer {
   background-color: #fff;
   bottom: 0;
   width: 100%;
-  padding: 1rem 2rem;
   height: 200px;
+  margin: 0;
 }
 
 .footer-column-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 5rem;
 }
 
 .footer-column {
-  width: 300px;
-  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-column-menus {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
 }
