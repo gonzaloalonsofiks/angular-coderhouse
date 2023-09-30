@@ -9,6 +9,10 @@ Se agrega una lista de empleados, desplegada a partir de un array de datos. Se m
 - Las áreas se muestran dentro de un "pill"
 - La condición del contrato ("Full time" o "Intern") aparecen diferenciadas con un color particular
 
+### Corrección
+
+- Se agregó la definición de "Employee" por interface para delimitar el scope de los datos
+
 ## Entrega 1
 
 Se presenta un layout de un portal de empleados, conteniendo una barra de navegación superior, una barra lateral con tareas y solicitudes pendientes, y un espacio principal donde se alojan novedades de la empresa.
