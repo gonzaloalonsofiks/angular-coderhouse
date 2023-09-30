@@ -6,4 +6,5 @@ export interface Employee {
   job_title: string;
   job_area: string;
   contract_type: string;
+  active: boolean;
 }

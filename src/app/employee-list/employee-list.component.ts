@@ -16,6 +16,7 @@ export class EmployeeListComponent {
       job_title: 'Marketing Manager',
       job_area: 'Marketing',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Briggs',
@@ -25,6 +26,7 @@ export class EmployeeListComponent {
       job_title: 'Electrical Engineer',
       job_area: 'Human Resources',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Aldus',
@@ -34,6 +36,7 @@ export class EmployeeListComponent {
       job_title: 'Associate Professor',
       job_area: 'Sales',
       contract_type: 'Intern',
+      active: true,
     },
     {
       first_name: 'Frederic',
@@ -43,6 +46,7 @@ export class EmployeeListComponent {
       job_title: 'Payment Adjustment Coordinator',
       job_area: 'Sales',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Ambros',
@@ -52,6 +56,7 @@ export class EmployeeListComponent {
       job_title: 'Office Assistant II',
       job_area: 'Marketing',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Lev',
@@ -61,6 +66,7 @@ export class EmployeeListComponent {
       job_title: 'Account Executive',
       job_area: 'Sales',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Dari',
@@ -70,6 +76,7 @@ export class EmployeeListComponent {
       job_title: 'Internal Auditor',
       job_area: 'Marketing',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Gwenette',
@@ -79,6 +86,7 @@ export class EmployeeListComponent {
       job_title: 'Geological Engineer',
       job_area: 'Operations',
       contract_type: 'Full time',
+      active: false,
     },
     {
       first_name: 'Rodolph',
@@ -88,6 +96,7 @@ export class EmployeeListComponent {
       job_title: 'Cost Accountant',
       job_area: 'Operations',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Pavia',
@@ -97,6 +106,7 @@ export class EmployeeListComponent {
       job_title: 'VP Quality Control',
       job_area: 'Sales',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Vin',
@@ -106,6 +116,7 @@ export class EmployeeListComponent {
       job_title: 'Senior Editor',
       job_area: 'Human Resources',
       contract_type: 'Intern',
+      active: true,
     },
     {
       first_name: 'Barnett',
@@ -115,6 +126,7 @@ export class EmployeeListComponent {
       job_title: 'Project Manager',
       job_area: 'Marketing',
       contract_type: 'Full time',
+      active: false,
     },
     {
       first_name: 'Toinette',
@@ -124,6 +136,7 @@ export class EmployeeListComponent {
       job_title: 'Developer IV',
       job_area: 'Sales',
       contract_type: 'Intern',
+      active: true,
     },
     {
       first_name: 'Crissie',
@@ -133,6 +146,7 @@ export class EmployeeListComponent {
       job_title: 'Programmer IV',
       job_area: 'Marketing',
       contract_type: 'Full time',
+      active: true,
     },
     {
       first_name: 'Chlo',
@@ -142,51 +156,7 @@ export class EmployeeListComponent {
       job_title: 'Clinical Specialist',
       job_area: 'Human Resources',
       contract_type: 'Full time',
-    },
-    {
-      first_name: 'Tyne',
-      last_name: 'Braam',
-      email: 'tbraamf@sohu.com',
-      gender: 'Female',
-      job_title: 'Nurse',
-      job_area: 'Operations',
-      contract_type: 'Full time',
-    },
-    {
-      first_name: 'Alethea',
-      last_name: 'Vanlint',
-      email: 'avanlintg@networkadvertising.org',
-      gender: 'Female',
-      job_title: 'Chief Design Engineer',
-      job_area: 'Marketing',
-      contract_type: 'Full time',
-    },
-    {
-      first_name: 'Liva',
-      last_name: 'Lenton',
-      email: 'llentonh@elegantthemes.com',
-      gender: 'Female',
-      job_title: 'Senior Quality Engineer',
-      job_area: 'Sales',
-      contract_type: 'Intern',
-    },
-    {
-      first_name: 'Kendre',
-      last_name: 'Bilovsky',
-      email: 'kbilovskyi@si.edu',
-      gender: 'Female',
-      job_title: 'Help Desk Operator',
-      job_area: 'Marketing',
-      contract_type: 'Full time',
-    },
-    {
-      first_name: 'Dean',
-      last_name: 'Raincin',
-      email: 'draincinj@spotify.com',
-      gender: 'Male',
-      job_title: 'VP Marketing',
-      job_area: 'Marketing',
-      contract_type: 'Full time',
+      active: false,
     },
   ];
 }
