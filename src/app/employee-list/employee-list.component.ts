@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from '../interfaces';
 
 @Component({
   selector: 'app-employee-list',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-list.component.scss'],
 })
 export class EmployeeListComponent {
-  employees = [
+  employees: Employee[] = [
     {
       first_name: 'Wesley',
       last_name: 'Jewess',
