@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.form input {
+  padding: 0.5rem 1rem;
+}
+
+.form select {
+  padding: 0.5rem 1rem;
+}
+
+.form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.form fieldset legend {
+  margin-bottom: 1rem;
+}
+
+.form fieldset label {
+  margin-right: 1rem;
+}
+
+.form button {
+  background-color: #f2d713;
+  border: 1px solid #000;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.invalid-field {
+  border: 1px solid red;
+}
