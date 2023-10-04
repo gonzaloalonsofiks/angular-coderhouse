@@ -1,5 +1,11 @@
 # Proyecto de Coderhouse
 
+## Entrega 3
+
+Se agrega a la página de Inicio un formulario para crear usuarios nuevos en la plataforma.
+
+El formulario contienen validaciones de datos requeridos o de formatos específicos, como email.
+
 ## Entrega 2
 
 Se agrega una lista de empleados, desplegada a partir de un array de datos. Se modifica la lista con las siguientes características:
