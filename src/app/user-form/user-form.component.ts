@@ -27,7 +27,10 @@ export class UserFormComponent {
   }
 
   createUser(): void {
-    console.log(this.userForm.controls['email'].value);
-    console.log(this.userForm.value);
+    if (this.userForm.invalid) {
+      alert('Completa los campos marcados en rojo');
+    } else {
+      console.log(this.userForm.value);
+    }
   }
 }
