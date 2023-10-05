@@ -1,0 +1,49 @@
+.brand {
+  text-transform: uppercase;
+}
+
+.user-box {
+  display: flex;
+  padding: 0.2rem 1rem;
+  gap: 0.7rem;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 3rem;
+}
+
+.user-name {
+  font-size: 1rem;
+  margin: 0;
+}
+
+nav,
+mat-toolbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  align-items: center;
+}
+
+.navbar-menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left-col {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navbar-menu-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+}
