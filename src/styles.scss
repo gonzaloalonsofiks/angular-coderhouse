@@ -1,9 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+html,
 body {
+  height: 100%;
+  margin: 0;
+  font-family: Poppins, sans-serif;
   background-color: #f5f6f7;
 }
 
@@ -28,13 +27,4 @@ a {
 
 a:hover {
   color: #2561ed;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Poppins, "Helvetica Neue", sans-serif;
 }
