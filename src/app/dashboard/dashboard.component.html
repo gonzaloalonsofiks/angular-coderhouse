@@ -1,0 +1,24 @@
+<nav>
+  <mat-toolbar class="navbar-menu-container">
+    <div class="navbar-left-col">
+      <span class="brand">Employee Hub</span>
+      <div class="navbar-menu-box">
+        <a
+          mat-button
+          color="basic"
+          *ngFor="let item of nav_menu"
+          href="{{ item.url }}"
+        >
+          {{ item.name }}
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-right-col">
+      <button mat-button class="user-box" aria-label="Profile icon">
+        <mat-icon>account_circle</mat-icon>
+        <p class="user-name">Joana Brie</p>
+      </button>
+    </div>
+  </mat-toolbar>
+</nav>

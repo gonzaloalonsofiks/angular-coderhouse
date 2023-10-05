@@ -1,8 +1,27 @@
-nav {
+.brand {
+  text-transform: uppercase;
+}
+
+.user-box {
+  display: flex;
+  padding: 0.2rem 1rem;
+  gap: 0.7rem;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 3rem;
+}
+
+.user-name {
+  font-size: 1rem;
+  margin: 0;
+}
+
+nav,
+mat-toolbar {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   align-items: center;
 }
 
@@ -19,29 +38,12 @@ nav {
   align-items: center;
 }
 
-.navbar-menu-container ul {
+.navbar-menu-box {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
-.navbar-menu-container li {
-  display: block;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.user-avatar-container {
+.navbar-container {
   display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.user-avatar-container img {
-  height: 34px;
-  border-radius: 200px;
-}
-
-.navbar-item-active {
-  border-bottom: 2px solid #2c3857;
 }
