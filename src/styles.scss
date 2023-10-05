@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -29,4 +28,13 @@ a {
 
 a:hover {
   color: #2561ed;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Poppins, "Helvetica Neue", sans-serif;
 }
