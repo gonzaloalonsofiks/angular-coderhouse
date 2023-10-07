@@ -6,7 +6,7 @@
         <a
           mat-button
           color="basic"
-          *ngFor="let item of nav_menu"
+          *ngFor="let item of menuLinks"
           href="{{ item.url }}"
         >
           {{ item.name }}
@@ -22,3 +22,11 @@
     </div>
   </mat-toolbar>
 </nav>
+
+<!-- Main Content Grid -->
+<div class="container-xxl">
+  <div class="row">
+    <div class="col-4">Sidebar</div>
+    <div class="col-8">Main</div>
+  </div>
+</div>

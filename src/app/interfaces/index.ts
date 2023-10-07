@@ -1,3 +1,4 @@
+// Employees
 export interface Employee {
   first_name: string;
   last_name: string;
@@ -7,4 +8,10 @@ export interface Employee {
   job_area: string;
   contract_type: string;
   active: boolean;
+}
+
+// Navigation Menu Links
+export interface NavMenuLink {
+  name: string;
+  url: string;
 }

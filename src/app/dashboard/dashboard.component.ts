@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavMenuLink } from '../interfaces';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,11 +10,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  nav_menu = [
+  menuLinks: NavMenuLink[] = [
     { name: 'Inicio', url: '/' },
     { name: 'Yo', url: '/me' },
-    { name: 'Mi Equipo', url: 'team' },
-    { name: 'Conocimiento', url: 'knowledge' },
-    { name: 'Servicios', url: 'services' },
+    { name: 'Mi Equipo', url: '/team' },
+    { name: 'Conocimiento', url: '/knowledge' },
+    { name: 'Servicios', url: '/services' },
   ];
 }
