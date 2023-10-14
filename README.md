@@ -6,6 +6,10 @@ Se agrega a la página de Inicio un formulario para crear usuarios nuevos en la 
 
 El formulario contienen validaciones de datos requeridos o de formatos específicos, como email.
 
+#### Corrección
+
+- Se agregó mensaje de validación debajo de cada campo del formulario
+
 ## Entrega 2
 
 Se agrega una lista de empleados, desplegada a partir de un array de datos. Se modifica la lista con las siguientes características:
@@ -15,7 +19,7 @@ Se agrega una lista de empleados, desplegada a partir de un array de datos. Se m
 - Las áreas se muestran dentro de un "pill"
 - La condición del contrato ("Full time" o "Intern") aparecen diferenciadas con un color particular
 
-### Corrección
+#### Corrección
 
 - Se agregó la definición de "Employee" por interface para delimitar el scope de los datos
 
