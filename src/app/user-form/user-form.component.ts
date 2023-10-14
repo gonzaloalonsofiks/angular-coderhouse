@@ -16,8 +16,8 @@ export class UserFormComponent {
 
   constructor(private FormBuilder: FormBuilder) {
     this.userForm = this.FormBuilder.group({
-      first_name: ['', Validators.required],
-      last_name: ['', Validators.required],
+      first_name: ['', [Validators.required, Validators.minLength(3)]],
+      last_name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       gender: [''],
       job_title: ['', Validators.required],
@@ -28,7 +28,7 @@ export class UserFormComponent {
 
   createUser(): void {
     if (this.userForm.invalid) {
-      alert('Completa los campos marcados en rojo');
+      alert('Completa los campos obligatorios');
     } else {
       console.log(this.userForm.value);
     }
