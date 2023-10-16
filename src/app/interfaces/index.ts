@@ -1,12 +1,12 @@
 // Employees
 export interface Employee {
-  first_name: string;
-  last_name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   gender: string;
-  job_title: string;
-  job_area: string;
-  contract_type: string;
+  jobTitle: string;
+  jobArea: string;
+  contractType: string;
   active: boolean;
 }
 
