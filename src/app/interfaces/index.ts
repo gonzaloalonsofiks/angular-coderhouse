@@ -9,9 +9,3 @@ export interface Employee {
   contractType: string;
   active: boolean;
 }
-
-// Navigation Menu Links
-export interface NavMenuLink {
-  name: string;
-  url: string;
-}
