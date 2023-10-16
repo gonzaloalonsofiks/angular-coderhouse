@@ -15,12 +15,17 @@ export class UsersComponent {
     this.matDialog.open(NewUserDialogComponent);
   }
 
+  deleteUser(email: string): void {
+    this.employees = this.employees.filter((i) => i.email !== email);
+  }
+
   displayedColumns: string[] = [
     'employeeName',
     'employeeEmail',
     'employeeJobTitle',
     'employeeJobArea',
     'employeeContractType',
+    'actions',
   ];
 
   employees: Employee[] = [
