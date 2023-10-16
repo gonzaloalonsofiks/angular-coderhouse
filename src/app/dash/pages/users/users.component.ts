@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Employee } from '../interfaces';
+import { Employee } from '../../../interfaces';
 
 @Component({
-  selector: 'app-employee-list',
-  templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.scss'],
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.scss'],
 })
-export class EmployeeListComponent {
+export class UsersComponent {
   employees: Employee[] = [
     {
       first_name: 'Wesley',
