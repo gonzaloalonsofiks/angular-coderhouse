@@ -1,0 +1,65 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <!-- Sidebar -->
+  <mat-drawer #drawer class="sidenav" mode="push">
+    <h2>Menú</h2>
+    <nav>
+      <mat-nav-list role="list" *ngFor="let item of menu">
+        <a mat-list-item role="listitem">{{ item }}</a>
+      </mat-nav-list>
+    </nav>
+  </mat-drawer>
+
+  <!-- Content -->
+  <div class="sidenav-content">
+    <!-- Toolbar -->
+    <mat-toolbar>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span> Employee Hub</span>
+      <span class="example-spacer"></span>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>help</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>settings</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <app-home></app-home>
+        </div>
+        <div class="col-8">
+          <app-forms></app-forms>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Empleados</h2>
+          <app-users></app-users>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>
