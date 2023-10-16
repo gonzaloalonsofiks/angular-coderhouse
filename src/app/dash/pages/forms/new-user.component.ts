@@ -12,11 +12,11 @@ interface Contract {
 }
 
 @Component({
-  selector: 'app-forms',
-  templateUrl: './forms.component.html',
-  styleUrls: ['./forms.component.scss'],
+  selector: 'app-new-user',
+  templateUrl: './new-user.component.html',
+  styleUrls: ['./new-user.component.scss'],
 })
-export class FormsComponent {
+export class NewUserComponent {
   areas: Area[] = [
     { value: 'marketing', viewValue: 'Marketing' },
     { value: 'hr', viewValue: 'Recursos Humanos' },

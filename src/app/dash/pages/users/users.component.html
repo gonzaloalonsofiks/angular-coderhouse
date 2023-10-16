@@ -1,22 +1,82 @@
-<div class="widget">
+<div class="container gy-4">
+  <h2>Empleados</h2>
+  <div class="row align-items-center justify-content-between">
+    <div class="col-4 justify-content-end">
+      <button mat-flat-button color="primary" (click)="openNewUserDialog()">
+        <mat-icon>add</mat-icon>Agregar usuario
+      </button>
+    </div>
+  </div>
+  <div class="row mt-3 mb-5">
+    <div>
+      <table mat-table [dataSource]="employees" class="mat-elevation-z8">
+        <!-- Name Column -->
+        <ng-container matColumnDef="employeeName">
+          <th mat-header-cell *matHeaderCellDef>Nombre completo</th>
+          <td mat-cell *matCellDef="let employee">
+            {{ employee.firstName }} {{ employee.lastName }}
+          </td>
+        </ng-container>
+
+        <!-- Email Column -->
+        <ng-container matColumnDef="employeeEmail">
+          <th mat-header-cell *matHeaderCellDef>E-mail</th>
+          <td mat-cell *matCellDef="let employee">
+            {{ employee.email }}
+          </td>
+        </ng-container>
+
+        <!-- Job Title Column -->
+        <ng-container matColumnDef="employeeJobTitle">
+          <th mat-header-cell *matHeaderCellDef>Puesto</th>
+          <td mat-cell *matCellDef="let employee">
+            {{ employee.jobTitle }}
+          </td>
+        </ng-container>
+
+        <!-- Job Area Column -->
+        <ng-container matColumnDef="employeeJobArea">
+          <th mat-header-cell *matHeaderCellDef>Departamento</th>
+          <td mat-cell *matCellDef="let employee">
+            {{ employee.jobArea }}
+          </td>
+        </ng-container>
+
+        <!-- Contract Type Column -->
+        <ng-container matColumnDef="employeeContractType">
+          <th mat-header-cell *matHeaderCellDef>Contrato</th>
+          <td mat-cell *matCellDef="let employee">
+            {{ employee.contractType }}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Old list for Employees -->
+
+<!-- <div class="widget">
   <div *ngFor="let employee of employees" class="employees-container">
     <div class="employee-contact">
       <p class="employee-name">
-        {{ employee.first_name }} {{ employee.last_name | uppercase }}
+        {{ employee.firstName }} {{ employee.lastName | uppercase }}
       </p>
       <a href="mailto:{{ employee.email }}">{{ employee.email }}</a>
     </div>
     <div class="employee-role">
-      <p class="pill">{{ employee.job_area }}</p>
+      <p class="pill">{{ employee.jobArea }}</p>
       <p
         class="pill"
         [style.background-color]="
-          employee.contract_type === 'Intern' ? '#2561ED' : '#F2D713'
+          employee.contractType === 'Intern' ? '#2561ED' : '#F2D713'
         "
-        [style.color]="employee.contract_type === 'Intern' ? '#fff' : '#000'"
+        [style.color]="employee.contractType === 'Intern' ? '#fff' : '#000'"
       >
-        {{ employee.contract_type }}
+        {{ employee.contractType }}
       </p>
     </div>
   </div>
-</div>
+</div> -->
