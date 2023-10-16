@@ -92,7 +92,14 @@
       </mat-form-field>
     </div>
     <div class="col-12">
-      <button mat-flat-button fab extended color="primary">
+      <button
+        mat-flat-button
+        fab
+        extended
+        color="primary"
+        (click)="onSubmit()"
+        [disabled]="userForm.invalid"
+      >
         Crear usuario
       </button>
     </div>

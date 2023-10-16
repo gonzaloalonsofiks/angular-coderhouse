@@ -6,6 +6,6 @@ import { Employee } from 'src/app/interfaces/index';
 })
 export class FullnamePipe implements PipeTransform {
   transform(value: Employee, ...args: unknown[]): unknown {
-    return `${value.lastName.toUpperCase()}, ${value.firstName}`;
+    return `${value.firstName} ${value.lastName.toUpperCase()}`;
   }
 }

@@ -52,4 +52,8 @@ export class NewUserComponent {
   public get emailControl() {
     return this.userForm.get('email');
   }
+
+  onSubmit(): void {
+    console.log(this.userForm.value);
+  }
 }
